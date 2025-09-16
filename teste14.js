@@ -1,0 +1,9 @@
+// ESCREVA UM PROGRAMA QUE CALCULE O FATORIAL DE UM NÚMERO. ( EXEMPLO: 5! = 5 X 4 X 3 X 2 X 1 = 120 )
+
+function fatorial(n) {// CRIANDO A FUNÇÃO FATORIAL
+    if (n === 0) { // SE N É IGUAL ESTRITAMENTE A 0 EM NUMERO E STRING
+        return 1;// RETORNA 1, POIS 0! É 1
+    }
+    return n * fatorial(n - 1); // RETORNA N MULTIPLICADO PELO FATORIAL DE N-1 (RECURSÃO)
+}
+console.log(fatorial(5)); // EXIBE O FATORIAL DE QUALQUER NÚMERO DIGITADO PELO USUARIO
